@@ -1,0 +1,100 @@
+/** Aqui se desarrollaran los estilos correspondientes a cada cuadro*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200&family=Yellowtail&display=swap');
+*{
+    margin: 0px;
+    padding: 1px;
+    word-break:break-all;
+}
+.contenido{
+    margin: 10px;
+}
+.fa-circle{
+    color: white;
+    font-size: 5px;    
+}
+.fa-table-list{
+    font-size: 20px;
+}
+
+/*con esto divido las 2 columnas*/
+.caja{
+    display:table-cell;
+    padding: 10px;
+} 
+/*aca selecciono la caja 1*/
+.caja:nth-child(1){
+    box-sizing: border-box;
+    background: rgb(197, 12, 12);
+    width: 25%;
+    float: left;
+}
+.caja:nth-child(1) h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+.caja:nth-child(1) h2{
+    text-align: left;
+    color: white;
+    margin-bottom: auto;
+}
+.caja:nth-child(1) p{
+    text-align: left;
+    color: white;
+    margin: 6px;
+}
+/*aca selecciono la caja 2*/
+.caja:nth-child(2){
+    position: relative;
+    box-sizing: border-box;
+    background: rgb(179, 176, 176);
+    width: 75%;
+    float: left;
+}
+.caja:nth-child(2) h1{
+    
+    text-align: left;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.caja:nth-child(2) h2{
+    text-align: left;
+    color: black;
+    margin-left: 30px;
+    margin: 40px 15px 20px 15px;
+}
+.caja:nth-child(2) p{
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+    color: black;
+}
+/*foto de perfil*/
+.contenido .caja:nth-child(1) .foto img{
+    display: block;
+    margin: auto;
+    max-width: 85%;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 40px;
+}
+
+@media(min-width: 1024px){
+    .contenido{
+        width: 1024px;
+        margin: auto;
+    }
+    .caja:nth-child(1){
+        line-height: 30px;
+        background-color: rgb(233, 4, 4);
+    }
+    .caja:nth-child(2){
+        line-height: 28.5px;
+        background-color: rgb(168, 162, 162);
+    }
+}
